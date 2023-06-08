@@ -38,6 +38,8 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         Map<String, List<String>> rolesEndpointsMap = new HashMap<>();
         // Agrega más roles y sus respectivos endpoints según sea necesario
         rolesEndpointsMap.put("ROLE_EMPLOYEE", Arrays.asList("/messaging/v1/employee/send-notification"));
+        rolesEndpointsMap.put("ROLE_CLIENT", Arrays.asList("/messaging/v1/employee/send-notification"));
+
 
         // Hacer la excepcion para el token
         try {
